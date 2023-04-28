@@ -69,7 +69,7 @@ class App extends Component {
           contacts={this.state.contacts}
         />
         <h2 className={css.title}>Contacts</h2>
-        <Filter value={this.state.filter} onChangeFilter={this.changeFilter} />
+        <Filter value={this.state.filter} onChange={this.changeFilter} />
         <ContactList
           contacts={this.getContacts()}
           onDeleteContact={this.deleteContact}
